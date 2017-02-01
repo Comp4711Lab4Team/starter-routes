@@ -30,7 +30,7 @@ class Hogwarts extends Application
 		$this->render();
 	}
     /**
-     * Homepage for our app
+     * Quote from author in the middle of the first row
      */
     public function shucks(){
             

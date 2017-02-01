@@ -62,7 +62,7 @@ $route['translate_uri_dashes'] = FALSE;
 $route['lock/em/up'] = "Hogwarts/shucks";
 //regex routing
 $route['comp(\d{4})/.*'] = "wise/bingo";
-// sleep routing
+//sleep routing
 $route['sleep'] = 'first/zzz';
 
 

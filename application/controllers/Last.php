@@ -11,7 +11,7 @@ class Last extends Application
 	}
 
 	/**
-	 * Returns the botton line right most person't quote info
+	 * Returns the bottom line right most person't quote info
 	 */
 	public function index()
 	{

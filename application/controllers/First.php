@@ -14,7 +14,7 @@ class First extends Application
     }
 
     /*
-     * this is the index path choosing the first quote
+     * This is the index path choosing the first quote
      * */
     function index() {
         // echo "this is working!";
@@ -32,7 +32,7 @@ class First extends Application
     }
 
     /*
-     * this is the zzz path choosing the first quote
+     * This is the zzz path choosing the first quote
      * */
     function zzz() {
         // this is the view we want shown
@@ -50,9 +50,13 @@ class First extends Application
      * Task #5: Wildcard routing: show the top right author image
      */
     function gimme($id) {
+
         $this->data['pagebody'] = 'justone';
+
         $record = $this->quotes->get($id);
+
         $this->data = array_merge($this->data, $record);
+
         $this->render();
     }
 
