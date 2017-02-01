@@ -54,6 +54,15 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 $route['lock/em/up'] = "Welcome/shucks";
+/*
+$route['products/([a-z]+)/(\d+)'] = "$1/id_$2"; 
+would remap /products/banana/25 to /banana/id_25
+
+Another example:
+$route['([a-z]+)/register'] = 'assimilate/$0'; 
+would remap /jim/register to /assimilate/jim
+*/
+$route['comp(\d{4})/.*'] = "wise/bingo";
 $route['sleep'] = 'first/zzz';
 $route['show/(:num)'] = 'first/gimme/$1';
 
@@ -68,6 +77,7 @@ $route['dunno'] = function() {
 };
 $route['([a-zA-Z]{4})/bingo'] = 'bingo';
       
+
 
 
 
