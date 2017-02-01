@@ -37,13 +37,14 @@ class Hogwarts extends Application
         // this is the view we want shown
 		$this->data['pagebody'] = 'justone';
 
-		// build the list of authors, to pass on to our view
+		// get the author's quote in the middle of the first row, to pass on to our view
 		$record = $this->quotes->get(2);                
 		
 		$this->data = array_merge($this->data, $record);
                 
 		$this->render();
     }
+    
     /**
      * Task #10: Show a random quote if URL is invalid (Error Controller)
      */
