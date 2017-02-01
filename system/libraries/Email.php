@@ -440,7 +440,7 @@ class CI_Email {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Initialize the Email Data
+	 * Initialize the Email data
 	 *
 	 * @param	bool
 	 * @return	CI_Email

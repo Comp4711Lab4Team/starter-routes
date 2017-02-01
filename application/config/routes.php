@@ -55,4 +55,12 @@ $route['translate_uri_dashes'] = FALSE;
 
 $route['lock/em/up'] = "Welcome/shucks";
 $route['sleep'] = 'first/zzz';
+$route['dunno'] = function() {
+    $source = '../data/surprise.jpg'; // an image you provide, outside of "oublic"!
+    // set the mime type for that image (jpeg, png, etc)
+    header("Content-type: image/jpeg");
+    header('Content-Disposition: inline');
+    readfile($source); // dish it
+    die(); // and we don't have to go any further
+};         
 

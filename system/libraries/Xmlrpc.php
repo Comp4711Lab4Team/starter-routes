@@ -126,7 +126,7 @@ class CI_Xmlrpc {
 	public $xmlrpcStruct	= 'struct';
 
 	/**
-	 * Data types list
+	 * data types list
 	 *
 	 * @var	array
 	 */
@@ -210,7 +210,7 @@ class CI_Xmlrpc {
 	public $method;
 
 	/**
-	 * XML-RPC Data
+	 * XML-RPC data
 	 *
 	 * @var	array
 	 */
@@ -406,7 +406,7 @@ class CI_Xmlrpc {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Take Array of Data and Create Objects
+	 * Take Array of data and Create Objects
 	 *
 	 * @param	array	$incoming
 	 * @return	void
