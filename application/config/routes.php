@@ -52,6 +52,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+$route['lock/em/up'] = "Welcome/shucks";
 $route['sleep'] = 'first/zzz';
 $route['dunno'] = function() {
     $source = '../data/surprise.jpg'; // an image you provide, outside of "oublic"!
@@ -61,3 +63,4 @@ $route['dunno'] = function() {
     readfile($source); // dish it
     die(); // and we don't have to go any further
 };         
+
