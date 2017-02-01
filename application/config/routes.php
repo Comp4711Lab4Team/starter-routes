@@ -50,6 +50,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 
+
 //Default Controller: Hogwarts controller
 $route['default_controller'] = 'Hogwarts';
 
@@ -61,14 +62,16 @@ $route['translate_uri_dashes'] = FALSE;
 $route['lock/em/up'] = "Hogwarts/shucks";
 //regex routing
 $route['comp(\d{4})/.*'] = "wise/bingo";
-
+// sleep routing
 $route['sleep'] = 'first/zzz';
+
 
 //Wildcard routing: pass a digit as parameter
 $route['show/(:num)'] = 'first/gimme/$1';
 
+// call back routing
 $route['dunno'] = function() {
-    $source = '../data/surprise.jpg'; // an image you provide, outside of "oublic"!
+    $source = '../data/surprise.jpg'; // an image you provide, outside of "public"!
     // set the mime type for that image (jpeg, png, etc)
     header("Content-type: image/jpeg");
     header('Content-Disposition: inline');
@@ -76,6 +79,8 @@ $route['dunno'] = function() {
     die(); // and we don't have to go any further
 
 };
+
+// regular expression routing
 $route['([a-zA-Z]{4})/bingo'] = 'bingo';
       
 

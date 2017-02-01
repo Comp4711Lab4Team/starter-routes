@@ -13,6 +13,9 @@ class First extends Application
         parent::__construct();
     }
 
+    /*
+     * this is the index path choosing the first quote
+     * */
     function index() {
         // echo "this is working!";
 
@@ -28,6 +31,9 @@ class First extends Application
 
     }
 
+    /*
+     * this is the zzz path choosing the first quote
+     * */
     function zzz() {
         // this is the view we want shown
         $this->data['pagebody'] = 'justone';
@@ -39,6 +45,7 @@ class First extends Application
         $this->render();
     }
 
+
     /**
      * Task #5: Wildcard routing: show the top right author image
      */
@@ -48,4 +55,5 @@ class First extends Application
         $this->data = array_merge($this->data, $record);
         $this->render();
     }
+
 }
