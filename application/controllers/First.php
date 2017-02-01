@@ -39,4 +39,17 @@ class First extends Application
         $this->render();
     }
 
+    function gimme($id) {
+        // this is the view we want shown
+        $this->data['pagebody'] = 'justone';
+
+        $record = $this->quotes->get($id);
+
+        $this->data = array_merge($this->data, $record);
+
+        $this->render();
+    }
+
+
+
 }

@@ -52,7 +52,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+$route['lock/em/up'] = "Welcome/shucks";
 $route['sleep'] = 'first/zzz';
+$route['show/(:num)'] = 'first/gimme/$1';
+
 $route['dunno'] = function() {
     $source = '../data/surprise.jpg'; // an image you provide, outside of "oublic"!
     // set the mime type for that image (jpeg, png, etc)
@@ -60,5 +64,10 @@ $route['dunno'] = function() {
     header('Content-Disposition: inline');
     readfile($source); // dish it
     die(); // and we don't have to go any further
+
 };
 $route['([a-zA-Z]{4})/bingo'] = 'bingo';
+      
+
+
+
