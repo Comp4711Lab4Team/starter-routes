@@ -45,7 +45,7 @@ class Hogwarts extends Application
 		$this->render();
     }
     /**
-     * Show a random quote if URL is invalid
+     * Task #10: Show a random quote if URL is invalid (Error Controller)
      */
     public function random()
     {
