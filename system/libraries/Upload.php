@@ -586,7 +586,7 @@ class CI_Upload {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Finalized Data Array
+	 * Finalized data Array
 	 *
 	 * Returns an associative array containing all of the information
 	 * related to the upload, allowing the developer easy access in one array.
