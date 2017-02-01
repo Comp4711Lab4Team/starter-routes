@@ -39,17 +39,13 @@ class First extends Application
         $this->render();
     }
 
+    /**
+     * Task #5: Wildcard routing: show the top right author image
+     */
     function gimme($id) {
-        // this is the view we want shown
         $this->data['pagebody'] = 'justone';
-
         $record = $this->quotes->get($id);
-
         $this->data = array_merge($this->data, $record);
-
         $this->render();
     }
-
-
-
 }
