@@ -13,6 +13,9 @@ class Bingo extends Application
         parent::__construct();
     }
 
+    /**
+     * this is the index path choosing the fifth quote
+     */
     function index() {
         // this is the view we want shown
         $this->data['pagebody'] = 'justone';
