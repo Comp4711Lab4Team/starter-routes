@@ -19,7 +19,7 @@ class Welcome extends Application
 		$this->data['pagebody'] = 'homepage';
 
 		// build the list of authors, to pass on to our view
-		$source = $this->quotes->all();
+		$source = $this->quotes->all();  // this is a 2D array
 		$authors = array ();
 		foreach ($source as $record)
 		{
