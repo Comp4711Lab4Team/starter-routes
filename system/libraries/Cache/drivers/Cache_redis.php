@@ -167,7 +167,7 @@ class CI_Cache_redis extends CI_Driver
 	 * Save cache
 	 *
 	 * @param	string	$id	Cache ID
-	 * @param	mixed	$data	Data to save
+	 * @param	mixed	$data	data to save
 	 * @param	int	$ttl	Time to live in seconds
 	 * @param	bool	$raw	Whether to store the raw value (unused)
 	 * @return	bool	TRUE on success, FALSE on failure
