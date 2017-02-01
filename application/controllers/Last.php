@@ -11,14 +11,14 @@ class Last extends Application
 	}
 
 	/**
-	 * Homepage for our app
+	 * Returns the botton line right most person't quote info
 	 */
 	public function index()
 	{
 		// this is the view we want shown
 		$this->data['pagebody'] = 'justone';
 
-		// build the list of authors, to pass on to our view
+		// get the last quote, to pass on to our view
 		$record = $this->quotes->get(6);                
 		
 		$this->data = array_merge($this->data, $record);

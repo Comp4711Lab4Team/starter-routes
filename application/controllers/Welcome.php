@@ -30,12 +30,13 @@ class Welcome extends Application
 		$this->render();
 	}
         
+        // Get the first row's middle quote
         public function shucks(){
             
-            // this is the view we want shown
+                // this is the view we want shown
 		$this->data['pagebody'] = 'justone';
 
-		// build the list of authors, to pass on to our view
+		// get the author's quote in the middle of the first row, to pass on to our view
 		$record = $this->quotes->get(2);                
 		
 		$this->data = array_merge($this->data, $record);
