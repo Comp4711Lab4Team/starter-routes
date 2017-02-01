@@ -861,7 +861,7 @@ class CI_Loader {
 	// --------------------------------------------------------------------
 
 	/**
-	 * Internal CI Data Loader
+	 * Internal CI data Loader
 	 *
 	 * Used to load views and files.
 	 *
@@ -870,7 +870,7 @@ class CI_Loader {
 	 *
 	 * @used-by	CI_Loader::view()
 	 * @used-by	CI_Loader::file()
-	 * @param	array	$_ci_data	Data to load
+	 * @param	array	$_ci_data	data to load
 	 * @return	object
 	 */
 	protected function _ci_load($_ci_data)
