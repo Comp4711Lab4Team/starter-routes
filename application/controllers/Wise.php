@@ -26,7 +26,7 @@ class Wise extends Application
 		$this->render();
 	}
 
-        /**
+    /**
 	 * Returns the second row's right author's quote
 	 */
         public function bingo()
