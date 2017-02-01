@@ -53,7 +53,11 @@ $route['default_controller'] = 'Hogwarts';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+//wildcard routing
 $route['lock/em/up'] = "Hogwarts/shucks";
+//regex routing
+$route['comp(\d{4})/.*'] = "wise/bingo";
+
 $route['sleep'] = 'first/zzz';
 $route['show/(:num)'] = 'first/gimme/$1';
 
@@ -68,6 +72,7 @@ $route['dunno'] = function() {
 };
 $route['([a-zA-Z]{4})/bingo'] = 'bingo';
       
+
 
 
 
