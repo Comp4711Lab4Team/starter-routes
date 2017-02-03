@@ -71,11 +71,17 @@ $route['show/(:num)'] = 'first/gimme/$1';
 
 // call back routing
 $route['dunno'] = function() {
-    $source = '../data/surprise.jpg'; // an image you provide, outside of "public"!
+    //$source = '../data/surprise.jpg'; // an image you provide, outside of "public"!
     // set the mime type for that image (jpeg, png, etc)
+
+    $dir ="../data/";
+    $sourcePic = scandir($dir);
+    $num = rand(2, sizeof($sourcePic) - 1);
+    $img = $sourcePic[$num];
+
     header("Content-type: image/jpeg");
     header('Content-Disposition: inline');
-    readfile($source); // dish it
+    readfile($dir . $img); // dish it
     die(); // and we don't have to go any further
 
 };
